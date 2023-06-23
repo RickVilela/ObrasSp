@@ -184,7 +184,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/jquery-min.js"></script>
-  <script src="assets/js/partners.js"></script>
+  <script src="assets/js/partners-index.js"></script>
   <script src="assets/js/main.js"></script>
 
 </body>
