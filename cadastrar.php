@@ -11,7 +11,6 @@ $estado = $_POST['estado'];
 $cep = $_POST['cep'];
 $categoria = $_POST['categoria'];
 
-$msg = false;
 
 $pdo = new PDO('mysql:host=localhost; dbname=obrassp;', 'root', '');
 
@@ -32,3 +31,5 @@ if($stmt->rowCount() >= 1){
 }else{
     echo json_encode("Falha ao retornar dados!");
 }
+
+

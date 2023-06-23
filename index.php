@@ -351,19 +351,19 @@
               <div class="row gy-3">
 
                 <div class="col-md-12">
-                  <input type="text" name="name" class="form-control" placeholder="Nome" required>
+                  <input type="text" name="name" class="form-control" placeholder="Nome" id="nome" required>
                 </div>
 
                 <div class="col-md-12 ">
-                  <input type="email" class="form-control" name="email" placeholder="E-mail" required>
+                  <input type="email" class="form-control" name="email" placeholder="E-mail" id="email" required>
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="phone" placeholder="Celular" required>
+                  <input type="text" class="form-control" name="phone" placeholder="Celular" id="celular" required>
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Mensagem" required></textarea>
+                  <textarea class="form-control" name="message" rows="6" placeholder="Mensagem" id="mensagem" required></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
@@ -371,7 +371,7 @@
                   <div class="error-message"></div>
                   <div class="sent-message">Sua Mensagem foi enviada, obrigado!</div>
 
-                  <button type="submit">Enviar</button>
+                  <button id="btnEnviarFormulario" type="submit">Enviar</button>
                 </div>
 
               </div>
@@ -466,10 +466,12 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   <script src="assets/js/jquery-min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/contato.js"></script>
   <script src="assets/js/partners-index.js"></script>
 
 </body>

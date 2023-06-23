@@ -1,9 +1,4 @@
 const btnCadastrar = $("#btnCadastrar");
-const btnUpload = $("#upload");
-
-btnUpload.on("click", (e) => {
-    e.preventDefault();
-})
 
 btnCadastrar.on("click", (e) =>{
 
@@ -15,7 +10,6 @@ const cidade = $("#cidade").val();
 const estado = $("#estado").val();
 const cep = $("#cep").val();
 const categoria = $("#categoria").val();
-
 
 e.preventDefault();
    
@@ -42,7 +36,7 @@ $.ajax({
 })
 
 $.ajax({
-    url: "get-partner.php",
+    url: "get-partner-index.php",
     mimeType: "text/html; charset=utf-8",
     success: function(result){
     $(".parceiro-card").html(result)
@@ -52,7 +46,6 @@ $.ajax({
         console.log(err);
     }
 })
-
 
 function limparCampos(){
     $("#nomeEmpresa").val('');
