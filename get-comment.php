@@ -1,5 +1,5 @@
 <?php
-header('Content-Type: application/json');
+header('Content-Type: text/html; iso-8859-1');
 header("Access-Control-Allow-Origin: *");
 
 $id = $_REQUEST['id'];

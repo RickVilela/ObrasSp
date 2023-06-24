@@ -25,7 +25,7 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
@@ -57,23 +57,14 @@
           <li><a href="index.php" class="active">Início</a></li>
           <li><a href="about.html">Sobre</a></li>
           <li><a href="partners.php">Parceiros</a></li>
-          <li class="dropdown"><a href="#"><span>Quero Anunciar</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <!-- <li class="dropdown"><a href="#"><span>Quero Anunciar</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
               <li><a href="#">Dropdown 2</a></li>
               <li><a href="#">Dropdown 3</a></li>
               <li><a href="#">Dropdown 4</a></li>
             </ul>
-          </li>
+          </li> -->
           <li><a href="contact.html">Contato</a></li>
         </ul>
       </nav><!-- .navbar -->
@@ -221,7 +212,7 @@
     </section><!-- End Our Projects Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
+    <!-- <section id="testimonials" class="testimonials section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
@@ -248,7 +239,7 @@
                   </p>
                 </div>
               </div>
-            </div><!-- End testimonial item -->
+            </div><!-- End testimonial item 
 
             <div class="swiper-slide">
               <div class="testimonial-wrap">
@@ -266,7 +257,7 @@
                   </p>
                 </div>
               </div>
-            </div><!-- End testimonial item -->
+            </div><!-- End testimonial item 
 
             <div class="swiper-slide">
               <div class="testimonial-wrap">
@@ -284,7 +275,7 @@
                   </p>
                 </div>
               </div>
-            </div><!-- End testimonial item -->
+            </div><!-- End testimonial item 
 
             <div class="swiper-slide">
               <div class="testimonial-wrap">
@@ -302,7 +293,7 @@
                   </p>
                 </div>
               </div>
-            </div><!-- End testimonial item -->
+            </div><!-- End testimonial item 
 
             <div class="swiper-slide">
               <div class="testimonial-wrap">
@@ -320,14 +311,14 @@
                   </p>
                 </div>
               </div>
-            </div><!-- End testimonial item -->
+            </div><!-- End testimonial item 
 
           </div>
           <div class="swiper-pagination"></div>
         </div>
 
       </div>
-    </section><!-- End Testimonials Section -->
+    </section>End Testimonials Section -->
 
 
      <!-- ======= Get Started Section ======= -->
@@ -458,6 +449,7 @@
 
   <div id="preloader"></div>
 
+  
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -474,6 +466,12 @@
   <script src="assets/js/partners-details.js"></script>
   <script src="assets/js/contato.js"></script>
   <script src="assets/js/partners-index.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+  <a id="robbu-whatsapp-button" class="left" target="_blank" href="https://api.whatsapp.com/send?phone=5519996661932&text=Ola%20gostaria%20de%20ser%20Parceiro!">
+    <div class="rwb-tooltip">Seja Parceiro!</div>
+    <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+  </a>
 
 </body>
 

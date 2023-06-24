@@ -56,15 +56,15 @@
         <ul>
           <li><a href="index.php">Home</a></li>
           <li><a href="about.html">Sobre</a></li>
-          <li><a href="partners.php">Parceiros</a></li>
-          <li class="dropdown"><a href="#"><span>Quero Anunciar</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li><a href="partners.php" class="active">Parceiros</a></li>
+          <!-- <li class="dropdown"><a href="#"><span>Quero Anunciar</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
               <li><a href="#">Dropdown 2</a></li>
               <li><a href="#">Dropdown 3</a></li>
               <li><a href="#">Dropdown 4</a></li>
             </ul>
-          </li>
+          </li> -->
           <li><a href="contact.html">Contato</a></li>
         </ul>
       </nav><!-- .navbar -->
@@ -186,6 +186,12 @@
   <script src="assets/js/jquery-min.js"></script>
   <script src="assets/js/partners-index.js"></script>
   <script src="assets/js/main.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+  <a id="robbu-whatsapp-button" class="left" target="_blank" href="https://api.whatsapp.com/send?phone=5519996661932&text=Ola%20gostaria%20de%20ser%20Parceiro!">
+    <div class="rwb-tooltip">Seja Parceiro!</div>
+    <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+  </a>
 
 </body>
 
