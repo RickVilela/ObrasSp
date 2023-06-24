@@ -1,15 +1,40 @@
 $(document).ready(() => {
+
+    function queryString(parameter) {  
+        var loc = location.search.substring(1, location.search.length);   
+        var param_value = false;   
+        var params = loc.split("&");   
+        for (i=0; i<params.length;i++) {   
+            param_name = params[i].substring(0,params[i].indexOf('='));   
+            if (param_name == parameter) {                                          
+                param_value = params[i].substring(params[i].indexOf('=')+1)   
+            }   
+        }   
+        if (param_value) {   
+            return param_value;   
+        }   
+        else {   
+            return false;   
+        }   
+  }
+
+  const idPost = queryString("id");
+
     $.ajax({
         url: "get-comment.php",
+        type: "POST",
         mimeType: "text/html; charset=utf-8",
-        success: function(result){
-        $(".comment").html(result)
-           
-        }, 
-        error: function(err){
-            console.log(err);
+        data: {
+        id: idPost
+        },
+        success: function (response){
+            $(".comment").html(response);
+        },error: function(err){
+            console.log(err)
         }
     })
+
+
 })
 
 $("#btnComentar").on("click", (e) =>{
@@ -18,6 +43,41 @@ $("#btnComentar").on("click", (e) =>{
     const nome = $("#nome").val();
     const email = $("#email").val();
     const comentario = $("#comentario").val();
+    
+    
+    function queryString(parameter) {  
+        var loc = location.search.substring(1, location.search.length);   
+        var param_value = false;   
+        var params = loc.split("&");   
+        for (i=0; i<params.length;i++) {   
+            param_name = params[i].substring(0,params[i].indexOf('='));   
+            if (param_name == parameter) {                                          
+                param_value = params[i].substring(params[i].indexOf('=')+1)   
+            }   
+        }   
+        if (param_value) {   
+            return param_value;   
+        }   
+        else {   
+            return false;   
+        }   
+  }
+
+  const idPost = queryString("id");
+
+  $.ajax({
+    url: "get-comment.php",
+    type: "POST",
+    mimeType: "text/html; charset=utf-8",
+    data: {
+    id: idPost
+    },
+    success: function (response){
+        $(".comment").html(response);
+    },error: function(err){
+        console.log(err)
+    }
+})
 
     $.ajax({
         url: "./new-comment.php",
@@ -25,10 +85,11 @@ $("#btnComentar").on("click", (e) =>{
         data: {
             nome: nome, 
             email: email,
-            comentario: comentario
+            comentario: comentario,
+            id_post: idPost
         },
         success: function (response){
-            console.log(response)
+            console.log(response);
             limparCampos()
 
         },error: function(err){
@@ -37,17 +98,6 @@ $("#btnComentar").on("click", (e) =>{
         }
     })
 
-    $.ajax({
-        url: "get-comment.php",
-        mimeType: "text/html; charset=utf-8",
-        success: function(result){
-        $(".comment").html(result)
-        $(".comments").html(result.qtdComentarios);
-        }, 
-        error: function(err){
-            console.log(err);
-        }
-    })
 
     function limparCampos(){
         $("#nome").val('');
