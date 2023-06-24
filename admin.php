@@ -50,30 +50,30 @@
 
 <div class="container-sm">
 
-    <form class="row g-3">
+    <form class="row g-3" action="upload.php" method="POST" enctype="multipart/form-data">
         <div class="col-md-6">
           <label for="inputEmail4" class="form-label">Nome da Empresa</label>
-          <input type="text" class="form-control" id="nomeEmpresa">
+          <input type="text" class="form-control" name='nomeEmpresa' id="nomeEmpresa">
         </div>
         <div class="col-md-6">
           <label for="inputPassword4" class="form-label">Nome do Responsável</label>
-          <input type="text" class="form-control" id="nomeResponsavel">
+          <input type="text" class="form-control" name="nomeResponsavel" id="nomeResponsavel">
         </div>
         <div class="col-12">
           <label for="inputAddress" class="form-label">Descrição</label>
-          <input type="text" class="form-control" id="descricao" placeholder="Descrição da empresa">
+          <input type="text" class="form-control" name="descricao" id="descricao" placeholder="Descrição da empresa">
         </div>
         <div class="col-12">
           <label for="inputAddress2" class="form-label">Endereço</label>
-          <input type="text" class="form-control" id="endereco" placeholder="Rua, n°">
+          <input type="text" class="form-control" name="endereco" id="endereco" placeholder="Rua, n°">
         </div>
         <div class="col-md-6">
           <label for="inputCity" class="form-label">Cidade</label>
-          <input type="text" class="form-control" id="cidade">
+          <input type="text" class="form-control" name="cidade" id="cidade">
         </div>
         <div class="col-md-4">
             <label for="inputState" class="form-label">Estado</label>
-            <select id="estado" class="form-select">
+            <select id="estado" name="estado" class="form-select">
               <option selected>Escolher...</option>
               <option value="ac">Acre</option> 
               <option value="al">Alagoas</option> 
@@ -106,11 +106,11 @@
           </div>
         <div class="col-md-2">
             <label for="inputZip" class="form-label">CEP</label>
-            <input type="text" class="form-control" id="cep">
+            <input type="text" name="cep" class="form-control" id="cep">
         </div>
         <div class="col-md-4">
           <label for="inputState" class="form-label">Categoria</label>
-          <select id="categoria" class="form-select">
+          <select id="categoria" name="categoria" class="form-select">
             <option selected>Escolher...</option>
             <option>Arquitetura</option>
             <option>Pintura</option>
@@ -121,22 +121,13 @@
           </select>
         </div>  
 
-        <div class="container">
-            <form method="post" action="" enctype="multipart/form-data" id="myform">
-                <div class='preview'>
-                    <img src="" id="img" width="100" height="100">
-                </div>
-                <div >
-                    <input type="file" id="file" name="file" />
-                    <input type="button" class="button" value="Upload" id="but_upload">
-                </div>
-            </form>
-        </div>
+    
+  Arquivo: <input type="file" required name="arquivo">
+           
 
         <div class="col-12">
-          <button type="submit" class="btn btn-success" id="btnCadastrar">Cadastrar</button>
+          <button type="submit" class="btn btn-success" name="submit" id="btnCadastrar">Cadastrar</button>
         </div>
-
       </form>
 </div>
 
