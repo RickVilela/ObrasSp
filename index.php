@@ -471,6 +471,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/partners-details.js"></script>
   <script src="assets/js/contato.js"></script>
   <script src="assets/js/partners-index.js"></script>
 

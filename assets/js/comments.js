@@ -42,6 +42,7 @@ $("#btnComentar").on("click", (e) =>{
         mimeType: "text/html; charset=utf-8",
         success: function(result){
         $(".comment").html(result)
+        $(".comments").html(result.qtdComentarios);
         }, 
         error: function(err){
             console.log(err);
