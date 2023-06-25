@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>UpConstruction Bootstrap Template - Service Details</title>
+  <title>Detalhes dos Serviços - Obras SP</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -56,10 +56,8 @@
         <ul>
           <li><a href="index.php">Início</a></li>
           <li><a href="about.html">Sobre</a></li>
-          <li><a href="services.html">Serviços</a></li>
-          <li><a href="projects.html">Parceiros</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Quero Anunciar</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li><a href="partners.php">Parceiros</a></li>
+          <!-- <li class="dropdown"><a href="#"><span>Quero Anunciar</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
@@ -75,7 +73,7 @@
               <li><a href="#">Dropdown 3</a></li>
               <li><a href="#">Dropdown 4</a></li>
             </ul>
-          </li>
+          </li> -->
           <li><a href="contact.html">Contato</a></li>
         </ul>
       </nav><!-- .navbar -->
@@ -166,11 +164,11 @@
           <div class="col-lg-4 col-md-6 footer-links">
             <h4>Serviços</h4>
             <ul>
-              <li><a href="#">Alvenaria</a></li>
-              <li><a href="#">Pintura</a></li>
-              <li><a href="#">Arquitetura</a></li>
-              <li><a href="#">Elétrica</a></li>
-              <li><a href="#">Ferramentas</a></li>
+              <li><a href="service-details.php?text=Alvenaria">Alvenaria</a></li>
+              <li><a href="service-details.php?text=Pintura">Pintura</a></li>
+              <li><a href="service-details.php?text=Arquitetura">Arquitetura</a></li>
+              <li><a href="service-details.php?text=Eletrica">Elétrica</a></li>
+              <li><a href="service-details.php?text=Ferramentas">Ferramentas</a></li>
             </ul>
           </div><!-- End footer links column-->
 
@@ -208,7 +206,6 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/js/jquery-min.js"></script>
   <script src="assets/js/dicas-servicos.js"></script>
 

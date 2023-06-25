@@ -414,11 +414,11 @@
           <div class="col-lg-4 col-md-6 footer-links">
             <h4>Serviços</h4>
             <ul>
-              <li><a href="#">Alvenaria</a></li>
-              <li><a href="#">Pintura</a></li>
-              <li><a href="#">Arquitetura</a></li>
-              <li><a href="#">Elétrica</a></li>
-              <li><a href="#">Ferramentas</a></li>
+              <li><a href="service-details.php?text=Alvenaria">Alvenaria</a></li>
+              <li><a href="service-details.php?text=Pintura">Pintura</a></li>
+              <li><a href="service-details.php?text=Arquitetura">Arquitetura</a></li>
+              <li><a href="service-details.php?text=Eletrica">Elétrica</a></li>
+              <li><a href="service-details.php?text=Ferramentas">Ferramentas</a></li>
             </ul>
           </div><!-- End footer links column-->
 
