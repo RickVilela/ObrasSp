@@ -833,8 +833,8 @@ a.plyr__control:before {
 }
 
 .plyr__poster {
-  background-color: #000;
-  background-color: #000;
+  background-color: #fff;
+  background-color: #fff;
   background-color: var(--plyr-video-background, var(--plyr-video-background, #000));
   background-position: 50% 50%;
   background-repeat: no-repeat;

@@ -1009,7 +1009,7 @@ section {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #000;
+  color: #fff;
 }
 
 .testimonials .testimonial-item h4 {
@@ -1151,7 +1151,7 @@ section {
 }
 
 .alt-services .icon-box h4 a {
-  color: #000;
+  color: #fff;
   transition: 0.3s;
 }
 

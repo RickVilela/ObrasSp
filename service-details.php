@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Detalhes dos Serviços - Obras SP</title>
+  <title>Obras SP - Detalhes dos Serviços</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/favicon.ico" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -153,10 +153,10 @@
           <div class="col-lg-4 col-md-6 footer-links">
             <h4>Links Úteis</h4>
             <ul>
-              <li><a href="#">Início</a></li>
-              <li><a href="#">Sobre nós</a></li>
+              <li><a href="index.php">Início</a></li>
+              <li><a href="about.html">Sobre nós</a></li>
               <li><a href="#">Serviços</a></li>
-              <li><a href="#parceiros">Parceiros</a></li>
+              <li><a href="partners.php">Parceiros</a></li>
               <li><a href="#">Privacy policy</a></li>
             </ul>
           </div><!-- End footer links column-->
