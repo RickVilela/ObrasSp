@@ -11,8 +11,6 @@ $(document).ready(() => {
             console.log(err);
         }
     })
-
-   
 })
 
 function editar(id){
@@ -123,11 +121,23 @@ function excluir(id){
             $.ajax({
                 url: "remove-partner.php",
                 type: "POST",
+                mimeType: "text/html; charset=utf-8",
                 data: {
                     id: id
                 },
                 success: function (response){
-                   
+                  $.ajax({
+                    url: "get-partner-admin.php",
+                    mimeType: "text/html; charset=utf-8",
+                    success: function(result){
+            
+                    $(".dados-tabela").html(result);
+                       
+                    }, 
+                    error: function(err){
+                        console.log(err);
+                    }
+                })
         
                 },error: function(err){
                     const Toast = Swal.mixin({
@@ -155,13 +165,10 @@ function excluir(id){
             'Parceiro Removido com Sucesso',
             'success'
           )
+
+         
         }
       })
-
-
-
-
-    
 }
 
 

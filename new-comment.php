@@ -7,8 +7,6 @@ $email = $_POST['email'];
 $comentario = $_POST['comentario'];
 $id_post = $_POST['id_post'];
 
-
-
 $pdo = new PDO('mysql:host=localhost; dbname=obrassp;', 'root', '');
 
 $stmt = $pdo->prepare('INSERT INTO comentarios (nome, email, comentario, id_post) VALUES (:nome, :email, :comentario, :id_post)');

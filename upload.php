@@ -1,8 +1,9 @@
-<?php
+<?php 
 
-  include("conexao.php");
+header('Content-Type: application/json');
+header("Access-Control-Allow-Origin: *");
 
-  if(isset($_REQUEST['submit'])){
+if(isset($_REQUEST['submit'])){
     $nomeEmpresa = $_REQUEST['nomeEmpresa'];
     $nomeResponsavel = $_REQUEST['nomeResponsavel'];
     $descricao = $_REQUEST['descricao'];
@@ -23,13 +24,26 @@
 
     trim(move_uploaded_file($_FILES['arquivo']['tmp_name'], $diretorio.$novo_nome)); //efetua o upload
 
-    $sql_code = "INSERT INTO parceiros ( nomeEmpresa , nomeResponsavel, descricao, endereco, cidade, estado, cep, categoria, caminhoImg) VALUES('$nomeEmpresa', '$nomeResponsavel', '$descricao', '$endereco', '$cidade', '$estado', '$cep', '$categoria', trim('$caminhoImg'))";
+    $pdo = new PDO('mysql:host=localhost; dbname=obrassp;', 'root', '');
 
-    if($mysqli->query($sql_code))
-      $msg = "Arquivo enviado com sucesso!";
-    else
-      $msg = "Falha ao enviar arquivo.";
+    $stmt = $pdo->prepare('INSERT INTO parceiros ( nomeEmpresa , nomeResponsavel, descricao, endereco, cidade, estado, cep, categoria, caminhoImg) VALUES(:nomeEmpresa, :nomeResponsavel, :descricao, :endereco, :cidade, :estado, :cep , :categoria, :caminhoImg)');
+    $stmt->bindValue(':nomeEmpresa', $nomeEmpresa);
+    $stmt->bindValue(':nomeResponsavel', $nomeResponsavel);
+    $stmt->bindValue(':descricao', $descricao);
+    $stmt->bindValue(':endereco', $endereco);
+    $stmt->bindValue(':cidade', $cidade);
+    $stmt->bindValue(':estado', $estado);
+    $stmt->bindValue(':cep', $cep);
+    $stmt->bindValue(':categoria', $categoria);
+    $stmt->bindValue(':caminhoImg', $caminhoImg);
 
+    $stmt->execute();
+
+    if($stmt->rowCount() >= 1){
+      echo json_encode($stmt);
+    }else{
+      echo json_encode("Nenhum comentário!");
+  }
+    
   }
 }
-?>

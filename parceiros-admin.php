@@ -244,16 +244,8 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="./assets/js/sb-admin-2.min.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="./assets/vendor/chart.js/Chart.min.js"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="./assets/js/demo/chart-area-demo.js"></script>
-    <script src="./assets/js/demo/chart-pie-demo.js"></script>
-
     <script src="assets/js/jquery-min.js"></script>
+    <script src="./assets/js/sb-admin-2.min.js"></script>
     <script src="assets/js/partners-admin.js"></script>
     <script src="assets/js/admin.js"></script>
     

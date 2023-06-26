@@ -29,13 +29,6 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: UpConstruction
-  * Updated: May 30 2023 with Bootstrap v5.3.0
-  * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -45,8 +38,7 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.php" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
+       
         <h1>OBRAS SP<span></span></h1>
       </a>
 
@@ -57,18 +49,9 @@
           <li><a href="index.php" class="active">Início</a></li>
           <li><a href="about.html">Sobre</a></li>
           <li><a href="partners.php">Parceiros</a></li>
-          <!-- <li class="dropdown"><a href="#"><span>Quero Anunciar</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li> -->
           <li><a href="contact.html">Contato</a></li>
         </ul>
       </nav><!-- .navbar -->
-
     </div>
   </header><!-- End Header -->
 
@@ -239,7 +222,7 @@
                   </p>
                 </div>
               </div>
-            </div><!-- End testimonial item 
+            </div> End testimonial item 
 
             <div class="swiper-slide">
               <div class="testimonial-wrap">
@@ -257,7 +240,7 @@
                   </p>
                 </div>
               </div>
-            </div><!-- End testimonial item 
+            </div> End testimonial item 
 
             <div class="swiper-slide">
               <div class="testimonial-wrap">
@@ -275,7 +258,7 @@
                   </p>
                 </div>
               </div>
-            </div><!-- End testimonial item 
+            </div>End testimonial item 
 
             <div class="swiper-slide">
               <div class="testimonial-wrap">
@@ -293,7 +276,7 @@
                   </p>
                 </div>
               </div>
-            </div><!-- End testimonial item 
+            </div>End testimonial item 
 
             <div class="swiper-slide">
               <div class="testimonial-wrap">
@@ -311,7 +294,7 @@
                   </p>
                 </div>
               </div>
-            </div><!-- End testimonial item 
+            </div>End testimonial item 
 
           </div>
           <div class="swiper-pagination"></div>
@@ -319,7 +302,6 @@
 
       </div>
     </section>End Testimonials Section -->
-
 
      <!-- ======= Get Started Section ======= -->
      <section id="get-started" class="get-started section-bg">
@@ -329,10 +311,9 @@
 
           <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
             <div class="content">
-              <h3>Seja um associado!</h3>
+              <h3>Seja nosso Parceiro!</h3>
               <p>Nosso propósito é aumentar as suas vendas</p>
               <p>Seja um de nossos associados e aumente suas possibilidades de negócios.</p>
-             
             </div>
           </div>
 
@@ -364,16 +345,12 @@
 
                   <button id="btnEnviarFormulario" type="submit">Enviar</button>
                 </div>
-
               </div>
             </form>
-          </div><!-- End Quote Form -->
-
+          </div>
         </div>
-
       </div>
-    </section><!-- End Get Started Section -->
-
+    </section>
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -421,8 +398,6 @@
               <li><a href="service-details.php?text=Ferramentas">Ferramentas</a></li>
             </ul>
           </div><!-- End footer links column-->
-
-
         </div>
       </div>
     </div>
@@ -433,22 +408,16 @@
           &copy; Copyright <strong><span>OBRAS SP</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/ -->
           Designed by <a href="https://www.lightsystemsoft.com.br/ls/index.php" target="_blank">Light System Software</a>
         </div>
       </div>
     </div>
-
   </footer>
   <!-- End Footer -->
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
-
   
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -468,11 +437,10 @@
   <script src="assets/js/partners-index.js"></script>
 
   <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
-  <a id="robbu-whatsapp-button" class="left" target="_blank" href="https://api.whatsapp.com/send?phone=5519996661932&text=Ola%20gostaria%20de%20ser%20Parceiro!">
+  <a id="robbu-whatsapp-button" class="left" target="_blank" href="https://api.whatsapp.com/send?phone=5519996661932&text=Olá,%20gostaria%20de%20ser%20Parceiro!">
     <div class="rwb-tooltip">Seja Parceiro!</div>
     <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
   </a>
 
 </body>
-
 </html>

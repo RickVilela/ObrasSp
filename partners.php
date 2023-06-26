@@ -47,24 +47,16 @@
       <a href="index.php" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>UpConstruction<span>.</span></h1>
+        <h1>OBRAS SP</h1>
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.php">Home</a></li>
+          <li><a href="index.php">Início</a></li>
           <li><a href="about.html">Sobre</a></li>
           <li><a href="partners.php" class="active">Parceiros</a></li>
-          <!-- <li class="dropdown"><a href="#"><span>Quero Anunciar</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li> -->
           <li><a href="contact.html">Contato</a></li>
         </ul>
       </nav><!-- .navbar -->
@@ -80,7 +72,7 @@
 
         <h2>Parceiros</h2>
         <ol>
-          <li><a href="index.php">Home</a></li>
+          <li><a href="index.php">Início</a></li>
           <li>Parceiros</li>
         </ol>
 

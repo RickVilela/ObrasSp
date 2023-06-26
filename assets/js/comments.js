@@ -41,23 +41,10 @@ $(document).ready(() => {
         const email = $("#email").val();
         const comentario = $("#comentario").val();  
     
-      $.ajax({
-            url: "./get-comment.php",
-            type: "POST",
-            dataType: "text/html; charset=utf-8",
-            data: {
-            id: idPost
-            },
-            success: function (response){
-                $(".comment").html(response);
-            },error: function(err){
-                console.log(err)
-            }
-        })
-    
         $.ajax({
             url: "./new-comment.php",
             type: "POST",
+            mimeType: "text/html; charset=utf-8",
             data: {
                 nome: nome, 
                 email: email,
@@ -66,14 +53,26 @@ $(document).ready(() => {
             },
             success: function (response){
                 console.log(response);
-                limparCampos()
-    
+
+                $.ajax({
+                    url: "get-comment.php",
+                    type: "POST",
+                    mimeType: "text/html; charset=utf-8",
+                    data: {
+                    id: idPost
+                    },
+                    success: function (response){
+                        $(".comment").html(response);
+                    },error: function(err){
+                        console.log(err)
+                    }
+                })
+                limparCampos();
             },error: function(err){
                 limparCampos()
                 console.log(err)
             }
         })
-    
     
         function limparCampos(){
             $("#nome").val('');
